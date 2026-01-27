@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    },
+    {
+      "item": "algaedelight:algae"
+    }
+  ],
+  "result": {
+    "id": "algaedelight:algae_block"
+  }
+}

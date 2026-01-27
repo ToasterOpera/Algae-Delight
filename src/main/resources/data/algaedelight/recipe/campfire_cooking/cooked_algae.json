@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "algaedelight:algae"
+  },
+  "result": {
+    "id": "algaedelight:cooked_algae"
+  },
+  "experience": 0.35
+}

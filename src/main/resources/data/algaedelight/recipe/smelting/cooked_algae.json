@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "algaedelight:algae"
+  },
+  "result": {
+    "id": "algaedelight:cooked_algae"
+  },
+  "experience": 0.35
+}

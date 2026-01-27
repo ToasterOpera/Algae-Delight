@@ -1,5 +1,6 @@
 package net.toasteropera.algaedelight;
 
+import net.toasteropera.algaedelight.block.ModBlocks;
 import net.toasteropera.algaedelight.item.ModCreativeModeTabs;
 import net.toasteropera.algaedelight.item.ModItems;
 import org.slf4j.Logger;
@@ -54,8 +55,7 @@ public class AlgaeDelight {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
-
-        modEventBus.addListener(this::addCreative);
+        ModBlocks.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -72,13 +72,6 @@ public class AlgaeDelight {
         LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
 
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ALGAE);
-            event.accept(ModItems.COOKED_ALGAE);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

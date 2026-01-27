@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.toasteropera.algaedelight.AlgaeDelight;
+import net.toasteropera.algaedelight.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -21,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ALGAE);
                         output.accept(ModItems.COOKED_ALGAE);
+                        output.accept(ModBlocks.ALGAE_BLOCK);
                     })
                     .build());
 
