@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALGAE);
                         output.accept(ModItems.COOKED_ALGAE);
                         output.accept(ModBlocks.ALGAE_BLOCK);
+                        output.accept(ModBlocks.SURFACE_ALGAE);
                     })
                     .build());
 

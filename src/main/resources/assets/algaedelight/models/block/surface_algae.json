@@ -1,0 +1,64 @@
+{
+  "parent": "minecraft:block/thin_block",
+  "textures": {
+    "particle": "algaedelight:block/surface_algae_1",
+    "1": "algaedelight:block/surface_algae_1",
+    "2": "algaedelight:block/surface_algae_2"
+  },
+  "render_type": "minecraft:translucent",
+  "ambientocclusion": true,
+  "elements": [
+    {
+      "from": [
+        0,
+        0.5,
+        0
+      ],
+      "to": [
+        16,
+        0.5,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#2"
+        },
+        "down": {
+          "texture": "#2",
+          "uv": [
+            0,
+            16,
+            16,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        0,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#1"
+        },
+        "down": {
+          "texture": "#1",
+          "uv": [
+            0,
+            16,
+            16,
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

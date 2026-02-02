@@ -25,6 +25,15 @@ public class ModBlocks {
             .strength(0.1F)
             .pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<Block> SURFACE_ALGAE = BLOCKS.register("surface_algae", () -> new SurfaceAlgaeBlock(BlockBehaviour.Properties.of()
+            .sound(SoundType.WET_SPONGE)
+            .mapColor(MapColor.PLANT)
+            .instabreak()
+            .noCollission()
+            .replaceable()
+            .noOcclusion()
+            .pushReaction(PushReaction.DESTROY)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
