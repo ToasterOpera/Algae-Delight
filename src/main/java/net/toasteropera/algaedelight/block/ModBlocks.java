@@ -32,6 +32,7 @@ public class ModBlocks {
             .noCollission()
             .replaceable()
             .noOcclusion()
+            .randomTicks()
             .pushReaction(PushReaction.DESTROY)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
