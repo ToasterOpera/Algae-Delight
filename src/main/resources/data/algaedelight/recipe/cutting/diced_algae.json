@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "algaedelight:cut_algae"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "algaedelight:diced_algae"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

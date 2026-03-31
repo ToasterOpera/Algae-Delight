@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "algaedelight:algae_dough"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "algaedelight:raw_algae_noodles"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

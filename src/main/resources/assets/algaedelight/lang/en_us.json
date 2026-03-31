@@ -5,5 +5,22 @@
   "block.algaedelight.algae_block": "Block of Algae",
   "block.algaedelight.surface_algae": "Surface Algae",
 
+  "item.algaedelight.cut_algae": "Cut Algae",
+  "item.algaedelight.diced_algae": "Diced Algae",
+  "item.algaedelight.algae_dough": "Algae Dough",
+  "item.algaedelight.raw_algae_noodles": "Raw Algae Noodles",
+  "item.algaedelight.algae_patty": "Algae Patty",
+
+  "item.algaedelight.algae_bar": "Algae Bar",
+  "item.algaedelight.algae_bread": "Algae Bread",
+  "item.algaedelight.algae_burger": "Algae Burger",
+  "item.algaedelight.algae_noodles": "Algae Noodles",
+  "item.algaedelight.algae_salad": "Algae Salad",
+  "item.algaedelight.algae_soup": "Algae Soup",
+  "item.algaedelight.algae_strip": "Algae Strip",
+
+
+
+
   "creativetab.algaedelight.algae_delight": "Algae Delight"
 }

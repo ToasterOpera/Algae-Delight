@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "algaedelight:cut_algae"
+  },
+  "result": {
+    "id": "algaedelight:algae_strips"
+  },
+  "experience": 0.35
+}

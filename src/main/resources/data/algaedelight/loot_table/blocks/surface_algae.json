@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "algaedelight:surface_algae",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "minecraft:silk_touch",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "algaedelight:algae"
+        }
+      ]
+    }
+  ]
+}
