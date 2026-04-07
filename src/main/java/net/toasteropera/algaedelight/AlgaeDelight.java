@@ -1,9 +1,13 @@
 package net.toasteropera.algaedelight;
 
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.toasteropera.algaedelight.block.ModBlocks;
 import net.toasteropera.algaedelight.block.blockentity.ModBlockEntities;
 import net.toasteropera.algaedelight.item.ModCreativeModeTabs;
 import net.toasteropera.algaedelight.item.ModItems;
+import net.toasteropera.algaedelight.screen.AlgaeVatScreen;
+import net.toasteropera.algaedelight.screen.ModMenuTypes;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -59,6 +63,8 @@ public class AlgaeDelight {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
 
+        ModMenuTypes.register(modEventBus);
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -81,5 +87,13 @@ public class AlgaeDelight {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @EventBusSubscriber(modid = MODID)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.ALGAE_VAT_MENU.get(), AlgaeVatScreen::new);
+        }
     }
 }
