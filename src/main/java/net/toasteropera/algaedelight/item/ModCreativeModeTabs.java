@@ -37,6 +37,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALGAE_BREAD);
                         output.accept(ModItems.ALGAE_NOODLES);
                         output.accept(ModItems.ALGAE_BURGER);
+
+                        output.accept(ModBlocks.ALGAE_VAT);
                     })
                     .build());
 

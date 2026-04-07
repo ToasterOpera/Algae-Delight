@@ -1,6 +1,7 @@
 package net.toasteropera.algaedelight;
 
 import net.toasteropera.algaedelight.block.ModBlocks;
+import net.toasteropera.algaedelight.block.blockentity.ModBlockEntities;
 import net.toasteropera.algaedelight.item.ModCreativeModeTabs;
 import net.toasteropera.algaedelight.item.ModItems;
 import org.slf4j.Logger;
@@ -56,6 +57,7 @@ public class AlgaeDelight {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

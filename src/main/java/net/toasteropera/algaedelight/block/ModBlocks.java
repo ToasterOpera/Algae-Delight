@@ -35,6 +35,10 @@ public class ModBlocks {
             .randomTicks()
             .pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<Block> ALGAE_VAT = registerBlock("algae_vat",
+            () -> new AlgaeVatBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
