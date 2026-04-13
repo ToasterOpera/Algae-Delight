@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:has_closer_water_fog",
+    "#minecraft:is_river",
+    "#minecraft:is_ocean",
+    "#minecraft:is_beach"
+  ]
+}

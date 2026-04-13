@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_features",
+  // Can either be a biome id, such as "minecraft:plains",
+  // or a list of biome ids, such as ["minecraft:plains", "minecraft:badlands", ...],
+  // or a biome tag, such as "#c:is_overworld".
+  "biomes": "#algaedelight:algae_biomes",
+  // Can either be a placed feature id, such as "examplemod:add_features_example",
+  // or a list of placed feature ids, such as ["examplemod:add_features_example", minecraft:ice_spike", ...],
+  // or a placed feature tag, such as "#examplemod:placed_feature_tag".
+  "features": "algaedelight:patch_algae",
+  // See the GenerationStep.Decoration enum in code for a list of valid enum names.
+  // The decoration step section further down also has the list of values for reference.
+  "step": "vegetal_decoration"
+}
