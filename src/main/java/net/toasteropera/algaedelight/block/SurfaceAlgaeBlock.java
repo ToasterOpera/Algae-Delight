@@ -33,7 +33,7 @@ public class SurfaceAlgaeBlock extends Block implements BonemealableBlock{
 
     public SurfaceAlgaeBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(AGE, Integer.valueOf(0)));
+        this.registerDefaultState(this.stateDefinition.any().setValue(AGE, Integer.valueOf(15)));
     }
 
     @Override
