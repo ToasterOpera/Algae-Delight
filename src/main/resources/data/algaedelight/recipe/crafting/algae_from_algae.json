@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "algaedelight:algaes"
+    }
+  ],
+  "result": {
+    "id": "algaedelight:algae"
+  }
+}

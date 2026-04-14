@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "tag": "algaedelight:algaes"
+    }
+  },
+  "result": {
+    "id": "algaedelight:clinging_algae",
+    "count": 2
+  }
+}

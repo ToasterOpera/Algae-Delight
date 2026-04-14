@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "algaedelight:algaes"
+  },
+  "result": {
+    "id": "algaedelight:algae"
+  }
+}
