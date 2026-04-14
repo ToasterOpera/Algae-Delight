@@ -35,6 +35,16 @@ public class ModBlocks {
             .randomTicks()
             .pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<Block> CLINGING_ALGAE = registerBlock("clinging_algae", () -> new ClingingAlgaeBlock(BlockBehaviour.Properties.of()
+            .sound(SoundType.WET_SPONGE)
+            .mapColor(MapColor.PLANT)
+            .instabreak()
+            .noCollission()
+            .replaceable()
+            .noOcclusion()
+            .randomTicks()
+            .pushReaction(PushReaction.DESTROY)));
+
     public static final DeferredBlock<Block> ALGAE_VAT = registerBlock("algae_vat",
             () -> new AlgaeVatBlock(BlockBehaviour.Properties.of()
                     .noOcclusion()));

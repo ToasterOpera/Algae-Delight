@@ -21,18 +21,20 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import static java.lang.Math.*;
 
-public class SurfaceAlgaeBlock extends Block implements BonemealableBlock{
-
+public class SurfaceAlgaeBlock extends Block implements BonemealableBlock {
+    //TODO: Use MAX_AGE
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 15);
     public static final int MAX_AGE = 15;
 
     @Override
     protected boolean isRandomlyTicking(BlockState state) {
+        //TODO: Use MAX_AGE
         return state.getValue(AGE) < 15;
     }
 
     public SurfaceAlgaeBlock(Properties properties) {
         super(properties);
+        //TODO: Use MAX_AGE
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, Integer.valueOf(15)));
     }
 
@@ -49,7 +51,8 @@ public class SurfaceAlgaeBlock extends Block implements BonemealableBlock{
 
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        if (state.getValue(AGE) < 15){
+        //TODO: Use MAX_AGE
+        if (state.getValue(AGE) < 15) {
             int times = random.nextInt(1, 2);
             for (int i = 0; i < times; i++) {
                 int dx = random.nextInt(-1, 2);

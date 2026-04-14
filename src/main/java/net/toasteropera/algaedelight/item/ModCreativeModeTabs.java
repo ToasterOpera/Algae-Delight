@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COOKED_ALGAE);
                         output.accept(ModBlocks.ALGAE_BLOCK);
                         output.accept(ModBlocks.SURFACE_ALGAE);
+                        output.accept(ModBlocks.CLINGING_ALGAE);
 
                         output.accept(ModItems.CUT_ALGAE);
                         output.accept(ModItems.DICED_ALGAE);
