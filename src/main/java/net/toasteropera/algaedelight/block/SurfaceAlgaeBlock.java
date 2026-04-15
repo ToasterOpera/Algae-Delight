@@ -6,6 +6,10 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -18,6 +22,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.toasteropera.algaedelight.Config;
 
 import static java.lang.Math.*;
 
@@ -41,6 +46,15 @@ public class SurfaceAlgaeBlock extends Block implements BonemealableBlock {
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return Block.box(0.0, 0.0, 0.0, 16.0, 0.5, 16.0);
+    }
+
+    //Swimming in Algae has a chance of making you slimy
+    @Override
+    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+        if (Config.APPLY_OOZING.getAsBoolean() && entity instanceof LivingEntity && level.random.nextFloat() < 0.00005) {
+            MobEffectInstance ooze = new MobEffectInstance(MobEffects.OOZING, 600);
+            ((LivingEntity) entity).addEffect(ooze);
+        }
     }
 
     //Prevents algae from being placed ing the air. Stay tuned for angel Algae
