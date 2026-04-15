@@ -46,7 +46,11 @@ public class SurfaceAlgaeBlock extends Block implements BonemealableBlock {
     //Prevents algae from being placed ing the air. Stay tuned for angel Algae
     @Override
     protected boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
-        return !level.getBlockState(pos.below()).is(BlockTags.AIR);
+        FluidState fluidstate = level.getFluidState(pos.below());
+        FluidState fluidstate1 = level.getFluidState(pos);
+        return (fluidstate.getType() == Fluids.WATER || state.getBlock() instanceof IceBlock) && fluidstate1.getType() == Fluids.EMPTY;
+
+//        return level.getBlockState(pos.below()).is(BlockTags.AIR);
     }
 
     @Override
