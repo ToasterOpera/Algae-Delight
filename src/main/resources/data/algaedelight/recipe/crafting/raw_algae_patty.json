@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "algaedelight:diced_algae"
+    },
+    {
+      "item": "algaedelight:diced_algae"
+    },
+    {
+      "tag": "c:eggs"
+    }
+  ],
+  "result": {
+    "id": "algaedelight:raw_algae_patty"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "algaedelight:algae_strips"
+    },
+    {
+      "item": "algaedelight:cooked_algae"
+    },
+    {
+      "item": "algaedelight:algae_patty"
+    },
+    {
+      "tag": "c:foods/bread"
+    }
+  ],
+  "result": {
+    "id": "algaedelight:algae_burger"
+  }
+}

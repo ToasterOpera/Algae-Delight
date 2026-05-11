@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "algaedelight:algae_dough"
+  },
+  "result": {
+    "id": "algaedelight:algae_bread"
+  },
+  "experience": 0.35
+}

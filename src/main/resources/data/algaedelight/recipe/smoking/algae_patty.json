@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "algaedelight:raw_algae_patty"
+  },
+  "result": {
+    "id": "algaedelight:algae_patty"
+  },
+  "experience": 0.35
+}

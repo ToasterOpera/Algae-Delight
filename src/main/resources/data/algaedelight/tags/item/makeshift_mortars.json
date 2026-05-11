@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:brick",
+    "minecraft:nether_brick",
+    "minecraft:iron_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:smooth_stone",
+    "minecraft:heavy_core"
+  ]
+}

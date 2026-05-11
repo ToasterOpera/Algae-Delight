@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "algaedelight:diced_algae"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "algaedelight:algae_flour"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "algaedelight:makeshift_mortars"
+  }
+}
